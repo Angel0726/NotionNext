@@ -46,7 +46,7 @@ const BLOG = {
   CONTACT_EMAIL: '',    // mail@tangly1024.com  
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: '',   //https://github.com/angel0726
+  CONTACT_GITHUB: 'https://github.com/Angel0726/NotionNext',   //https://github.com/angel0726
   CONTACT_TELEGRAM: '',
 
   // 悬浮挂件
