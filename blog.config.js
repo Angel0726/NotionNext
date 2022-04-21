@@ -1,7 +1,7 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
   AUTHOR: 'Logic', // 作者
-  BIO: '给时光以生命，给岁月以光明', // 作者简介
+  BIO: '给时光以生命，给岁月以文明', // 作者简介
   LINK: 'https://angel0726.github.io/', // 网站地址
   AVATAR: '/avatar.jpg', // 个人头像 默认取public目录下的avatar.png
   KEYWORDS: 'Notion, 博客, blog, ML, Deep', // 网站关键词 英文逗号隔开
