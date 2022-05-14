@@ -43,7 +43,7 @@
 - 使用 Tailwind CSS，轻松实现二次开发
 
 ## 特色
-- 支持更多的页面，功能，更多特性、欢迎移步[我的博客](https://tangly1024.com/article/notion-next)查看
+- 支持更多的页面，功能，更多特性、欢迎移步[我的博客](https://coolnext.vercel.app)查看
 - 支持多主题切换
 
 | Next | Medium | Hexo | Fukasawa |
