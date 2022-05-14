@@ -11,7 +11,7 @@ export const LayoutSearch = (props) => {
   const { keyword } = props
   useEffect(() => {
     setTimeout(() => {
-      const container = document.getElementById('container')
+      const container = typeof document !== 'undefined' && document.getElementById('container')
       if (container && container.innerHTML) {
         const re = new RegExp(`${keyword}`, 'gim')
         container.innerHTML = container.innerHTML.replace(re, `<span class='text-red-500 border-b border-dashed'>${keyword}</span>`)
@@ -22,12 +22,12 @@ export const LayoutSearch = (props) => {
   return <LayoutBase {...props}>
     <div className='py-12'>
       <div className='pb-4 w-full'>{locale.NAV.SEARCH}</div>
-      <SearchInput currentSearch={keyword} {...props}/>
-      <TagGroups {...props}/>
-      <CategoryGroup {...props}/>
+      <SearchInput currentSearch={keyword} {...props} />
+      <TagGroups {...props} />
+      <CategoryGroup {...props} />
     </div>
     <div id='container'>
-      <BlogPostListScroll {...props}/>
+      <BlogPostListScroll {...props} />
     </div>
   </LayoutBase>
 }

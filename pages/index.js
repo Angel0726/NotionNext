@@ -14,9 +14,9 @@ export async function getStaticProps() {
   const props = await getGlobalNotionData({ from, pageType: ['Post'] })
   const { allPosts, siteInfo } = props
   const meta = {
-    title: `${siteInfo.title} | ${siteInfo.description}`,
-    description: siteInfo.description,
-    image: siteInfo.pageCover,
+    title: `${siteInfo?.title} | ${siteInfo?.description}`,
+    description: siteInfo?.description,
+    image: siteInfo?.pageCover,
     slug: '',
     type: 'website'
   }
@@ -55,7 +55,7 @@ export async function getStaticProps() {
       meta,
       ...props
     },
-    revalidate: 1
+    revalidate: 5
   }
 }
 
